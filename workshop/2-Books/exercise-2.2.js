@@ -13,5 +13,16 @@
 // Console.log(homeLibrary) to verify that all is working.
 
 class BookList {
-
+    constructor() {
+    this.read = 0;
+    this.unread = 0;
+    this.books = [];
+    this.refLastBook = null;
+    this.refCurrBook = null;
+    this.refUpnextBook = null;
+    }
 }
+
+const homeLibrary = new BookList();
+
+console.log(homeLibrary);
